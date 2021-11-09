@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 <div class="header">
@@ -14,31 +14,15 @@
 </div>
 <div class="innerWrapper">
 	<div class="leftSidebar">
-	<li><a href="index.php">Strona główna</a></li>
-		<?php
-		$catalog = scandir('./pages');
-		foreach($catalog as $item){
-			$cutted_item = str_replace(".php", "", $item);
-			if ($item != '.' && $item != '..') {
-				echo "<li><a href='/pages/$item'>$cutted_item</a></li>";
-			}
-		}
-		?>
+	<li><a href="../index.php">Strona główna</a></li>
+		
 	</div>
 	<div class="content">
 		<div class="wrapper">
 			<h3>O sklepie</h3>
-			<p>Nasz sklep jest super</p>
-			<ul>
-				<?php
-				$suma = 0;
-				foreach($products as $product){
-					$suma = $suma + $product["price"];
-					echo "<li>nazwa: " . $product["name"]. " cena: " .$product["price"] . "</li>";
-				}
-				?>
-			</ul>
-			<p>Suma: <?php echo $suma;?> zł</p>
+			<p>Telefon: 123 123 123</p>
+			<p>E-mail: 123@wp.pl</p>
+			<p>Adres: Lipowa 2</p>
 		</div>
 	</div>
 	<div class="rightSidebar">

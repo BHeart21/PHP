@@ -7,7 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 <div class="header">
@@ -15,7 +15,7 @@
 </div>
 <div class="innerWrapper">
 	<div class="leftSidebar">
-	<li><a href="index.php">Produkty</a></li>
+	<li><a href="../index.php">Produkty</a></li>
 	</div>
 	<div class="content">
 		<div class="wrapper">
